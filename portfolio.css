@@ -137,6 +137,7 @@
     padding: 6px 22px;
     }
     .hero-buttons:hover{
+      box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
         background-color: var(--accent-color);
         color: var(--main-color2);
     }
@@ -146,7 +147,10 @@
     gap: 30px;
   }
   .content-item{
-    flex-basis: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
+  }
+  .content-item:hover{
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
   }
   .content-img{
     width: 100%;
