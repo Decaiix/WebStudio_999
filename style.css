@@ -9,6 +9,7 @@
     --footer-background-color:#2F303A;
     --team-background-color:#F5F4FA;
     --footer-contacts-color: rgba(255, 255, 255, 0.60);
+    --advantages-img-bg:#F5F4FA;
 }
 h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,p{
     margin: 0;
@@ -101,6 +102,10 @@ transition:ease .35s;
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--footer-background-color);
+    background-image: url(./img/wstudioherobg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .hero-title{
     width: 696px;
@@ -136,6 +141,58 @@ transition:ease .35s;
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+}
+.advantages-li:nth-child(1):before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-color: var(--advantages-img-bg);
+    border-radius: 4px;
+    background-image:url(./img/antenna.png) ;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.advantages-li:nth-child(2):before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-color: var(--advantages-img-bg);
+    border-radius: 4px;
+    background-image:url(./img/clock.png) ;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.advantages-li:nth-child(3):before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-color: var(--advantages-img-bg);
+    border-radius: 4px;
+    background-image:url(./img/diagram.png) ;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.advantages-li:nth-child(4):before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-color: var(--advantages-img-bg);
+    border-radius: 4px;
+    background-image:url(./img/astronaut.png) ;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
 }
 .advantages-text{
     margin-top: 10px;
