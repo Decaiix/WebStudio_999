@@ -64,41 +64,40 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ECECEC;
-  }
-  .header-logo{
+}
+.header-logo{
     color:var(--main-color);
     font-family: "Raleway", sans-serif;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
-  }
-  .headerLogo-span{
+}
+.headerLogo-span{
     color: var(--accent-color);
-  }
-  .header-box{
+}
+.header-box{
     display: flex;
     align-items: center;
-  }
-  .nav{
+}
+.nav{
     margin-left: 93px;
-  }
-  .nav-list{
+}
+.nav-list{
     display: flex;
     gap: 50px;
-    margin-right: 344px;
-  }
-  .nav-link{
+}
+.nav-link{
     color: var(--main-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-  transition:ease .35s;
-  }   .nav-link:hover{
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+transition:ease .35s;
+}   .nav-link:hover{
     color: var(--accent-color);
-  }
-  .nav-link-active{
+}
+.nav-link-active{
     color: var(--accent-color);
     font-size: 14px;
 font-weight: 500;
@@ -106,22 +105,40 @@ line-height: 1.14;
 letter-spacing: 0.28px;
 transition:ease .35s;
 }
-  .r-nav{
-    /* margin-left: 344px; */
+
+.r-nav{
+    margin-left: 318px;
     display: flex;
-    gap: 50px;
-  }
-  .rnav-link{
+    gap: 30px;
+}
+.rnav-link{
     color: var(--sub-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
     transition:ease .35s;
-  }
-  .rnav-link:hover{
+}
+.rnav-link:hover{
     color: var(--accent-color);
-  }
+}
+.header-icon{
+  cursor: pointer;
+}
+.header-mail{
+    width: 16px;
+    height: 12px;
+}
+.header-phone{
+    width: 10px;
+    height: 16px;
+}
+.rnav-li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
   .hero{
     padding-block: 94px;
   }
@@ -191,9 +208,13 @@ transition:ease .35s;
     padding-bottom: 20px;
   }
   
-.footer{
+  .footer{
     padding-block: 60px;
     background: var(--footer-background-color);
+}
+.footer .container{
+    display: flex;
+    gap: 70px;
 }
 .footer-logo{
     display: inline-block;
@@ -233,4 +254,21 @@ transition:ease .35s;
     font-weight: 400;
     line-height: 1.7; 
     letter-spacing: 0.42px;
+}
+.footer-icons{
+  display: flex;
+  gap: 34px;
+}
+.r-footer h2{
+    color:var(--main-color2);
+    font-size: 14px;
+    font-weight: 700;
+    line-height:1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.footer-svg{
+    width: 25px;
+    height: 25px;
 }
