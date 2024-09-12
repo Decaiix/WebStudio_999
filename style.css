@@ -11,6 +11,7 @@
     --footer-contacts-color: rgba(255, 255, 255, 0.60);
     --advantages-img-bg:#F5F4FA;
     --customers-border:#AFB1B8;
+    --worker-icon:rgba(175, 177, 184, 1);
 }
 h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,p{
     margin: 0;
@@ -104,9 +105,17 @@ transition:ease .35s;
     line-height: 1.14;
     letter-spacing: 0.28px;
     transition:ease .35s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.rnav-link:hover{
+.rnav-link:hover,
+.rnav-link:focus{
     color: var(--accent-color);
+    .header-icon{
+        fill: var(--accent-color);
+    }
+    
 }
 .header-icon{
   cursor: pointer;
@@ -309,14 +318,22 @@ letter-spacing: 0.48px;
     display: flex;
     gap: 34px;
     margin-top: 28px;
+    width: 44px;
+    height: 44px;
 }
 .worker-icon{
     cursor: pointer;
     width: 20px;
     height: 20px;
+    fill:var(--worker-icon);
 }
-
-
+.workers-links:hover,
+.workers-links:focus{
+    background-color: var(--accent-color);
+    .worker-icon{
+        fill: var(--main-color2);
+    }
+}
 .customers{
     padding-block: 94px;
     justify-content: center;
