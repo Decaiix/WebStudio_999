@@ -176,6 +176,7 @@
     }
     .hero-buttons:hover,
     .hero-buttons:focus{
+      outline: none;
       box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
         background-color: var(--accent-color);
         color: var(--main-color2);

@@ -391,6 +391,7 @@ letter-spacing: 0.48px;
 .customer-links:hover,
 .customer-links:focus
 {
+    outline: none;
     border-color:  var(--accent-color);
     .customer-icon{
         fill: var(--accent-color);
@@ -403,6 +404,7 @@ letter-spacing: 0.48px;
 .footer .container{
     display: flex;
     gap: 70px;
+    align-items: first baseline;
 }
 .footer-logo{
     display: inline-block;
