@@ -231,6 +231,7 @@
 .footer .container{
     display: flex;
     gap: 70px;
+    align-items: first baseline;
 }
 .footer-logo{
     display: inline-block;

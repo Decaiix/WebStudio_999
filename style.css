@@ -341,6 +341,7 @@ letter-spacing: 0.48px;
 }
 .workers-linksq:hover,
 .workers-linksq:focus{
+    outline:none;
     background-color: var(--accent-color);
     .worker-icon{
         fill: var(--main-color2);
