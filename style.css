@@ -618,9 +618,9 @@ letter-spacing: 0.48px;
     padding: 11px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
-    gap: 12px;
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 .model-input:focus{
     .user-model-svg{
@@ -630,6 +630,9 @@ letter-spacing: 0.48px;
         border: none;
         outline: 1px solid var(--accent-color);
     }
+}
+.user-model{
+    background-color:transparent;
 }
 textarea{
     color: var(--main-color);
@@ -723,9 +726,6 @@ textarea::placeholder{
     .model-close{
         fill: var(--accent-color);
     }
-}
-.user-model{
-    background-color:transparent;
 }
 .user-model-svg{
     width: 18px;
