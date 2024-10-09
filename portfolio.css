@@ -262,7 +262,26 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  
+  .nnjkfgsddsfi{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(33, 150, 243, 0.90);
+  }
+.rtyqwe{
+    word-break: break-all;
+    position: relative;
+}
+.rtyqwe p{
+    width: 322px;
+    height: 100%;
+    color: var(--main-color2);
+    font-size: 18px;
+    font-weight: 400;
+    line-height:1.55;
+    letter-spacing: 0.54px;
+}
   .footer{
     padding-block: 60px;
     background: var(--footer-background-color);
