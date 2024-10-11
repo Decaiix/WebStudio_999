@@ -685,7 +685,10 @@ letter-spacing: 0.48px;
 .model-input:hover,.model-input:focus{
     outline: 1px solid var(--accent-color);
 }
-.model-input:hover,.model-input:focus + .user-model-svg{
+.model-input:hover + .user-model-svg{
+    fill: var(--accent-color);
+}
+.model-input:focus + .user-model-svg{
     fill: var(--accent-color);
 }
 .user-model{
