@@ -135,6 +135,7 @@ body{
     .nav-drop{
         top: 25px;
         opacity: 1;
+        pointer-events:all;
     }
 }
 .nav-drop{
@@ -144,6 +145,7 @@ body{
     background-color: var(--accent-color);
     border-radius: 8px;
     opacity:0;
+    pointer-events: none;
     transition: ease-in-out .2s;
 }
 .nav-drop ul{
