@@ -606,8 +606,10 @@ letter-spacing: 0.48px;
     transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .model{
-    position: relative;
-    top:0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     overflow: hidden;
     width: 528px;
     height:fit-content;
@@ -615,6 +617,7 @@ letter-spacing: 0.48px;
     padding: 40px;
     border-radius: 4px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .model-title{
     color: var(--main-color);
@@ -776,3 +779,7 @@ textarea::placeholder{
     opacity: 0;
     pointer-events: none;
  }
+.is-hidden .model{
+    transform: translate(2000px,2000px);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) rotate(360deg);
+}
