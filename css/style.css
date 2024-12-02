@@ -28,7 +28,6 @@ ul {
 }
 
 .container {
-  outline: 2px solid #fa094e;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
