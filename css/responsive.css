@@ -19,12 +19,13 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
   .r-nav {
     display: none;
   }
   .header_mobile--menu {
     display: block;
-    width: 40px;
-    height: 40px;
   }
 }/*# sourceMappingURL=responsive.css.map */

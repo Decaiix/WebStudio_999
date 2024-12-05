@@ -124,6 +124,49 @@ body{
 
 .header_mobile--menu{
     display: none;
+    cursor: pointer;
+    position: relative;
+    &:hover{
+      .header_mobile--menu--list{
+        transform: translateX(0);
+        pointer-events: all;
+      }
+    }
+    &--list{
+        position: fixed;
+        right:5%;
+        background-color: #2196F3;
+        height: fit-content;
+        width: fit-content;
+        z-index:2;
+        top:5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: transform 250ms ease-in-out;
+        border-radius: 10px;
+        padding:16px 32px;
+        text-align: center;
+        pointer-events: none;
+    }
+        ul{
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            padding: 10px;
+            li a{
+                color: white;
+            }
+          }
+    
+    }
+
+
+.header-menu-svg{
+    position: relative;
+    width: 40px;
+    height: 40px;
 }
 .r-nav{
     display: flex;
