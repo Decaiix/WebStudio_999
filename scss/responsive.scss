@@ -1,11 +1,22 @@
 @media screen and (max-width:1220px){
     .header{
-            justify-content: center;
-        
+        display: flex;
+        align-items: center;
     }
     
     .r-nav{
         flex-direction: column;
         gap: 10px;
+        align-items: start;
+    }
+}
+@media screen and (max-width:768px){
+    .r-nav{
+        display: none;
+    }
+    .header_mobile--menu{
+        display: block;
+        width: 40px;
+        height: 40px;
     }
 }

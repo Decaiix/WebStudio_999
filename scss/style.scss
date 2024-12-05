@@ -39,8 +39,6 @@ body{
     padding-bottom: 25px;
     background: $main-colorsec;
     border-bottom: 1px solid #ECECEC;
-
-
     &-logo{
         color: $main-color;
         font-family: "Raleway", sans-serif;
@@ -62,7 +60,10 @@ body{
         margin-inline: auto;
     }
 }
-
+.l-header{
+    display: flex;
+    align-items: center;
+}
 
 .nav{
     margin-left: 93px;
@@ -121,11 +122,13 @@ body{
     }
 }
 
-
+.header_mobile--menu{
+    display: none;
+}
 .r-nav{
     display: flex;
+    align-items: center;
     gap: 30px;
-
     &-link{
         color: $sub-color;
         font-size: 14px;
