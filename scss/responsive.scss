@@ -1,3 +1,5 @@
+@import '../utils/variables.scss';
+
 @media screen and (max-width:1220px){
     .header{
         display: flex;
@@ -8,6 +10,21 @@
         flex-direction: column;
         gap: 10px;
         align-items: start;
+    }
+    .mobile-footer{
+        display: block;
+    }
+    .footer{
+        display: none;
+    }
+    .mobile-top-footer{
+        justify-content:space-around;
+    }
+    .mobile-l-footer{
+        margin-right: 0;
+    }
+    .mobile-r-footer{
+        margin-right: 0;
     }
 }
 @media screen and (max-width:768px){
@@ -20,5 +37,43 @@
     .header_mobile--menu{
         display: block;
     }
-
+    .mobile-footer{
+        display: block;
+    }
+    .footer{
+        display: none;
+    }
+    .mobile-footer .mobile-top-footer{
+        justify-content:space-between;
+    }
+    .mobile-l-footer{
+        text-align: center;
+        margin-right: 0;
+    }
+   .r-footer{
+        margin-right: 0;
+    }
+  
+}
+@media screen and (max-width:525px){
+    .mobile-footer {
+        .mobile-l-footer{
+            margin-right: 0;
+        }
+    }
+    .mobile-r-footer{
+        margin-right: 0;
+        text-align: center;
+    }
+    .mobile-footer .mobile-top-footer{
+        flex-direction: column;
+        gap: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-footer .mobile-bottom-footer{
+        &-input{
+            width: 80vw;
+        }
+    }
 }
