@@ -22,8 +22,8 @@ ul{
     list-style-type: none;
 }
 .container{
-    outline: 2px solid #fa094e;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     padding-inline: 15px;
     margin-inline: auto;
 }
@@ -37,11 +37,7 @@ body{
     padding-top: 24px;
     padding-bottom: 25px;
     background: $main-colorsec;
-    display: flex;
-    align-items: center;
     border-bottom: 1px solid #ECECEC;
-
-
     &-logo{
         color: $main-color;
         font-family: "Raleway", sans-serif;
@@ -56,13 +52,16 @@ body{
     &-box{
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 }
-
+.l-header{
+    display: flex;
+    align-items: center;
+}
 
 .nav{
     margin-left: 93px;
-
     &-list{
         display: flex;
         gap: 50px;
@@ -118,12 +117,56 @@ body{
     }
 }
 
+.header_mobile--menu{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    &:hover{
+      .header_mobile--menu--list{
+        transform: translateX(0);
+        pointer-events: all;
+      }
+    }
+    &--list{
+        position: fixed;
+        right:5%;
+        background-color: #2196F3;
+        height: fit-content;
+        width: fit-content;
+        z-index:2;
+        top:5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: transform 250ms ease-in-out;
+        border-radius: 10px;
+        padding:16px 32px;
+        text-align: center;
+        pointer-events: none;
+    }
+        ul{
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            padding: 10px;
+            li a{
+                color: white;
+            }
+          }
+    
+    }
 
+
+.header-menu-svg{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
 .r-nav{
-    margin-left: 318px;
     display: flex;
+    align-items: center;
     gap: 30px;
-
     &-link{
         color: $sub-color;
         font-size: 14px;
@@ -163,7 +206,6 @@ body{
         cursor: pointer;
     }
 }
-
 
 // HERO
 
@@ -281,7 +323,7 @@ body{
 .footer{
     padding-block: 60px;
     background: $footer-background-color;
-
+    display: block;
 
     & .container{
         display: flex;
@@ -426,3 +468,182 @@ body{
     fill: $main-colorsec;
 }
 }
+.mobile-l-footer{
+    margin-right: 80px;
+}
+.mobile-r-footer{
+    margin-right: 93px;
+}
+.mobile-r-footer h2{
+    color:$main-colorsec;
+    font-size: 14px;
+    font-weight: 700;
+    line-height:1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.mobile-footer{
+    padding-block: 60px;
+    background: $footer-background-color;
+    display: none;
+
+    & .container{
+        display: block;
+        // align-items: first baseline;
+    }
+    .mobile-top-footer{
+        display: flex;
+        // justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    .mobile-bottom-footer{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &-logo{
+        display: inline-block;
+        margin-bottom: 20px;
+        color: $main-colorsec;
+        font-family: "Raleway", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.38;
+        letter-spacing: 0.78px;
+    }
+    // .mobile-l-footer{
+    //     margin-right: 80px;
+    // }
+    &-span{
+        color: $accent-color;
+    }
+    &-maps{
+        display: inline-block;
+        margin-bottom: 9px;
+        color: $main-colorsec;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.7;
+        letter-spacing: 0.42px;
+    }
+    &-contacts{
+        display: inline-block;
+        margin-bottom: 9px;
+        color: $footer-contacts-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.7; 
+        letter-spacing: 0.42px;
+    }
+    &-tel{
+        display: inline-block;
+        color: $footer-contacts-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.7; 
+        letter-spacing: 0.42px;
+    }
+    &-icons{
+        display: flex;
+        gap: 10px;
+    }
+    // .r-footer{
+    //     margin-right: 93px;
+    // }
+    // .mobile-r-footer h2{
+    //     color:$main-colorsec;
+    //     font-size: 14px;
+    //     font-weight: 700;
+    //     line-height:1.14;
+    //     letter-spacing: 0.42px;
+    //     text-transform: uppercase;
+    //     margin-bottom: 32px;
+    // }
+    &-svg{
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        fill: $worker-icon;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &-links{
+        width: 44px;
+        height:44px;
+        border-radius: 50%;
+        background-color:$footer-linksbg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &-links:hover,
+    &-links:focus{
+        background-color: $accent-color;
+        .mobile-footer-svg{
+            fill: $main-colorsec;
+        }
+    }
+}
+.mobile-bottom-footer{
+    &-title{
+        color: $main-colorsec;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &-input{
+        background-color: transparent;
+        padding: 15px;
+        width: 450px;
+        color: $main-colorsec;
+        font-size: 16px;
+        font-weight: 400;
+        line-height:1.25;
+        letter-spacing: 0.48px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }&-input::placeholder{
+        color: rgba(255, 255, 255, 0.60);
+    }
+    &-connect{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    &-button{
+        border-radius: 4px;
+        background:$accent-color;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 10px 28px;
+        border: none;
+        color: $main-colorsec;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height:1.8;
+        letter-spacing: 0.96px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &-button:hover{
+        transform: scale(1.04,1.06);
+    }
+    &-svg{
+        width: 24px;
+        height: 24px;
+        fill: $main-colorsec;
+    }
+    }
+
+@import './responsive.scss'
