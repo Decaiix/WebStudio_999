@@ -33,6 +33,67 @@
   .mobile-r-footer {
     margin-right: 0;
   }
+  .advantages {
+    padding-bottom: 94px;
+  }
+  .advantages .container {
+    padding-inline: 8vw;
+  }
+  .advantages-list {
+    width: 100%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 30px;
+    -webkit-column-gap: 8vw;
+       -moz-column-gap: 8vw;
+            column-gap: 8vw;
+  }
+  .advantages-li {
+    width: 100%;
+  }
+  .advantages-li::before {
+    width: 100%;
+  }
+  .advantages-text {
+    width: 100%;
+  }
+  .photos {
+    display: none;
+  }
+  .team-list {
+    width: 85%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 30px;
+    -webkit-column-gap: 12vw;
+       -moz-column-gap: 12vw;
+            column-gap: 12vw;
+  }
+  .team-item {
+    width: 100%;
+  }
+  .team-img {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .customers-list {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (max-width: 768px) {
   .nav {

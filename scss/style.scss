@@ -1,4 +1,5 @@
 @import '../utils/variables.scss';
+
 *,*::after,*::before{
     box-sizing: border-box;
     margin: 0;
@@ -22,8 +23,6 @@ ul{
     list-style-type: none;
 }
 .container{
-    // outline: 2px solid #fa094e;
-    // max-width: max-content;
     width: 100%;
     max-width: 1200px;
     padding-inline: 15px;
@@ -264,10 +263,15 @@ body{
         display: flex;
         gap: 30px;
     }
-    &-li:nth-child(1):before{
-        content: "";
+    &-li{
+        width: 270px;
+    }
+    &-li::before{
         width: 270px;
         height: 120px;
+    }
+    &-li:nth-child(1):before{
+        content: "";
         display: block;
         background-color: $advantages-img-bg;
         border-radius: 4px;
@@ -279,8 +283,6 @@ body{
     }
     &-li:nth-child(2):before{
         content: "";
-        width: 270px;
-        height: 120px;
         display: block;
         background-color: $advantages-img-bg;
         border-radius: 4px;
@@ -292,8 +294,6 @@ body{
     }
     &-li:nth-child(3):before{
         content: "";
-        width: 270px;
-        height: 120px;
         display: block;
         background-color: $advantages-img-bg;
         border-radius: 4px;
@@ -305,8 +305,6 @@ body{
     }
     &-li:nth-child(4):before{
         content: "";
-        width: 270px;
-        height: 120px;
         display: block;
         background-color: $advantages-img-bg;
         border-radius: 4px;
@@ -328,7 +326,6 @@ body{
 .photos{
     padding-top:94px;
     padding-bottom: 94px;
-
 
     &-imgs{
         display: flex;
@@ -476,7 +473,7 @@ body{
     &-list{
         display: flex;
         gap: 30px;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         align-items: center;
     }
     &-icon{
