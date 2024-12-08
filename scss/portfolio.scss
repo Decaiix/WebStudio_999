@@ -127,6 +127,12 @@ body{
         pointer-events: all;
       }
     }
+    &--list--active{
+        color:$main-colorsec;
+    }
+    &--list--links{
+        color: $footer-contacts-color;
+    }
     &--list{
         position: fixed;
         right:5%;
@@ -150,9 +156,9 @@ body{
             gap: 15px;
             flex-direction: column;
             padding: 10px;
-            li a{
-                color: white;
-            }
+            // li a{
+            //     color: white;
+            // }
           }
     
     }
@@ -237,12 +243,17 @@ body{
 
 .buttons-list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
+    align-items: center;
+    width: 100%;
 }
 
+
 .main-content{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -646,4 +657,4 @@ body{
     }
     }
 
-@import './responsive.scss'
+@import './respportfolio.scss'

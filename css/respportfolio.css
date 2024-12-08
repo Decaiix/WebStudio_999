@@ -1,0 +1,100 @@
+@media screen and (max-width: 1220px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-link:after {
+    top: 51.5px;
+  }
+  .nav-active:after {
+    top: 51.5px;
+  }
+  .r-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .mobile-footer {
+    display: block;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-top-footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .mobile-l-footer {
+    margin-right: 0;
+  }
+  .mobile-r-footer {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .r-nav {
+    display: none;
+  }
+  .header_mobile--menu {
+    display: block;
+  }
+  .mobile-footer {
+    display: block;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer .mobile-top-footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mobile-l-footer {
+    text-align: center;
+    margin-right: 0;
+  }
+  .r-footer {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 535px) {
+  .header-logo {
+    font-size: 24px;
+    letter-spacing: 0.72;
+  }
+  .mobile-footer .mobile-l-footer {
+    margin-right: 0;
+  }
+  .mobile-r-footer {
+    margin-right: 0;
+    text-align: center;
+  }
+  .mobile-footer .mobile-top-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile-footer .mobile-bottom-footer-input {
+    width: 80vw;
+  }
+}/*# sourceMappingURL=respportfolio.css.map */

@@ -147,6 +147,12 @@ body {
           transform: translateX(0);
   pointer-events: all;
 }
+.header_mobile--menu--list--active {
+  color: #FFF;
+}
+.header_mobile--menu--list--links {
+  color: rgba(255, 255, 255, 0.6);
+}
 .header_mobile--menu--list {
   position: fixed;
   right: 5%;
@@ -189,9 +195,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10px;
-}
-.header_mobile--menu ul li a {
-  color: white;
 }
 
 .header-menu-svg {
