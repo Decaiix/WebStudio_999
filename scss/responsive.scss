@@ -258,8 +258,8 @@
             justify-content: center;
         }
     }
-    .ioqweqweq {
-        flex-direction: column;
+    .model{
+        width: 90vw;
     }
 }
 @media screen and (max-width:400px){
@@ -269,12 +269,9 @@
             width: 80vw;
         }
     }
-    .ioqweqweq {
-        flex-direction: column;
-    }
 }
 @media screen and (max-width:335px){
-    .ioqweqweq {
-        flex-direction: row;
-    }
+    // .ioqweqweq {
+    //     flex-direction: row;
+    // }
 }

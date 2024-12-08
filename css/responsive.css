@@ -266,30 +266,13 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .ioqweqweq {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .model {
+    width: 90vw;
   }
 }
 @media screen and (max-width: 400px) {
   .hero-title {
     font-size: 26px;
     width: 80vw;
-  }
-  .ioqweqweq {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-@media screen and (max-width: 335px) {
-  .ioqweqweq {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }/*# sourceMappingURL=responsive.css.map */
