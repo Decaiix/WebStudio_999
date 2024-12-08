@@ -315,10 +315,10 @@ body {
   gap: 30px;
 }
 .advantages-li {
-  width: 270px;
+  width: 100%;
 }
 .advantages-li::before {
-  width: 270px;
+  width: 100%;
   height: 120px;
 }
 .advantages-li:nth-child(1):before {
@@ -366,6 +366,7 @@ body {
   margin-bottom: 30px;
 }
 .advantages-text {
+  width: 100%;
   margin-top: 10px;
   color: #757575;
   font-size: 14px;
@@ -434,6 +435,7 @@ body {
   gap: 30px;
 }
 .team-item {
+  width: 100%;
   background: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -444,7 +446,10 @@ body {
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 .team-img {
-  height: 260px;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 .team-title {
   margin-bottom: 50px;
@@ -1326,20 +1331,11 @@ textarea::placeholder {
     max-width: max-content;
     margin-inline: auto;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
     -webkit-column-gap: 8vw;
        -moz-column-gap: 8vw;
             column-gap: 8vw;
-  }
-  .advantages-li {
-    width: 100%;
-  }
-  .advantages-li::before {
-    width: 100%;
-  }
-  .advantages-text {
-    width: 100%;
   }
   .photos {
     display: none;
@@ -1350,21 +1346,14 @@ textarea::placeholder {
     max-width: -moz-max-content;
     max-width: max-content;
     margin-inline: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
     -webkit-column-gap: 12vw;
        -moz-column-gap: 12vw;
             column-gap: 12vw;
-  }
-  .team-item {
-    width: 100%;
-  }
-  .team-img {
-    width: 100%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
   }
   .customers-list {
     display: grid;
@@ -1403,12 +1392,15 @@ textarea::placeholder {
   .r-footer {
     margin-right: 0;
   }
+  .hero {
+    padding-block: 118px;
+  }
   .hero-title {
     font-size: 32px;
     width: 450px;
   }
   .advantages {
-    padding-bottom: 94px;
+    padding-block: 60px;
   }
   .advantages-list {
     width: 100%;
@@ -1417,8 +1409,11 @@ textarea::placeholder {
     max-width: max-content;
     margin-inline: auto;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+  .team {
+    padding-block: 60px;
   }
   .team-list {
     width: 100%;
@@ -1427,7 +1422,7 @@ textarea::placeholder {
     max-width: max-content;
     margin-inline: auto;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
   .team-item {
@@ -1438,6 +1433,9 @@ textarea::placeholder {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+  }
+  .customers {
+    padding-block: 60px;
   }
   .model {
     width: 100%;

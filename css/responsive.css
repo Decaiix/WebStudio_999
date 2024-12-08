@@ -52,20 +52,11 @@
     max-width: max-content;
     margin-inline: auto;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
     -webkit-column-gap: 8vw;
        -moz-column-gap: 8vw;
             column-gap: 8vw;
-  }
-  .advantages-li {
-    width: 100%;
-  }
-  .advantages-li::before {
-    width: 100%;
-  }
-  .advantages-text {
-    width: 100%;
   }
   .photos {
     display: none;
@@ -76,21 +67,14 @@
     max-width: -moz-max-content;
     max-width: max-content;
     margin-inline: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
     -webkit-column-gap: 12vw;
        -moz-column-gap: 12vw;
             column-gap: 12vw;
-  }
-  .team-item {
-    width: 100%;
-  }
-  .team-img {
-    width: 100%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
   }
   .customers-list {
     display: grid;
@@ -129,12 +113,15 @@
   .r-footer {
     margin-right: 0;
   }
+  .hero {
+    padding-block: 118px;
+  }
   .hero-title {
     font-size: 32px;
     width: 450px;
   }
   .advantages {
-    padding-bottom: 94px;
+    padding-block: 60px;
   }
   .advantages-list {
     width: 100%;
@@ -143,8 +130,11 @@
     max-width: max-content;
     margin-inline: auto;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+  .team {
+    padding-block: 60px;
   }
   .team-list {
     width: 100%;
@@ -153,7 +143,7 @@
     max-width: max-content;
     margin-inline: auto;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
   .team-item {
@@ -164,6 +154,9 @@
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+  }
+  .customers {
+    padding-block: 60px;
   }
   .model {
     width: 100%;

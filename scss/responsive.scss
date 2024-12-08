@@ -44,21 +44,9 @@
         max-width: max-content;
         margin-inline: auto;
         display: grid;
-        grid-template-columns: repeat(2 , 2fr);
+        grid-template-columns: repeat(2 , 1fr);
         row-gap: 30px;
         column-gap: 8vw;
-    }
-    &-li{
-    // width: 354px;
-    width: 100%;
-    } 
-    &-li::before{
-        // width: 354px;
-        width: 100%;
-    }
-    &-text{
-        // width: 354px;
-        width: 100%;
     }
 }
 .photos{
@@ -69,19 +57,12 @@
         width: 85%;
         max-width: max-content;
         margin-inline: auto;
+        flex-wrap: wrap;
         display: grid;
-        grid-template-columns: repeat(2,2fr);
+        grid-template-columns: repeat(2,1fr);
         row-gap: 30px;
         column-gap: 12vw;
     }
-    &-item{
-        // width: 374px;
-        width: 100%;
-    }
-    &-img{
-        width: 100%;
-        height: max-content;
-       }
 }
 .customers{
     &-list{
@@ -119,33 +100,31 @@
         margin-right: 0;
     }
     .hero{
+        padding-block: 118px;
         &-title{
-            // font-size: 26px;
-            // width: 360px;
             font-size: 32px;
             width: 450px;
         }
     }
     .advantages{
-        padding-bottom: 94px;
+        padding-block: 60px;
     &-list{
         width: 100%;
         max-width: max-content;
         margin-inline: auto;
         display: grid;
-        grid-template-columns: repeat(2 , 2fr);
+        grid-template-columns: repeat(2 , 1fr);
         gap: 30px;
     }
 }
     .team{
+        padding-block: 60px;
         &-list{
             width: 100%;
             max-width: max-content;
             margin-inline: auto;
             display: grid;
-            grid-template-columns: repeat(2,2fr);
-            // row-gap: 30px;
-            // column-gap: 5vw;
+            grid-template-columns: repeat(2,1fr);
             gap: 30px;
         }
         &-item{
@@ -155,6 +134,9 @@
             width: 100%;
             height: max-content;
            }
+    }
+    .customers{
+        padding-block: 60px;
     }
     .model{
         width: 100%;
