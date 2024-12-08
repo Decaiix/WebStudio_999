@@ -5,7 +5,14 @@
         display: flex;
         align-items: center;
     }
-    
+    .nav{
+        &-link:after{
+            top: 51.5px;
+        }
+        &-active:after{
+            top: 51.5px;
+        }
+    }
     .r-nav{
         flex-direction: column;
         gap: 10px;
@@ -111,9 +118,52 @@
    .r-footer{
         margin-right: 0;
     }
-  
+    .hero{
+        &-title{
+            // font-size: 26px;
+            // width: 360px;
+            font-size: 32px;
+            width: 450px;
+        }
+    }
+    .advantages{
+        padding-bottom: 94px;
+    &-list{
+        width: 100%;
+        max-width: max-content;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: repeat(2 , 2fr);
+        gap: 30px;
+    }
 }
-@media screen and (max-width:525px){
+    .team{
+        &-list{
+            width: 100%;
+            max-width: max-content;
+            margin-inline: auto;
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            // row-gap: 30px;
+            // column-gap: 5vw;
+            gap: 30px;
+        }
+        &-item{
+            width: 100%;
+        }
+        &-img{
+            width: 100%;
+            height: max-content;
+           }
+    }
+}
+@media screen and (max-width:535px){
+    .header{
+        &-logo{
+            font-size: 24px;
+            letter-spacing: 0.72;
+        }
+    }
     .mobile-footer {
         .mobile-l-footer{
             margin-right: 0;
@@ -131,6 +181,77 @@
     }
     .mobile-footer .mobile-bottom-footer{
         &-input{
+            width: 80vw;
+        }
+    }
+
+    .hero{
+        &-title{
+            font-size: 26px;
+            width: 360px;
+        }
+        &-button{
+            padding: 10px 24px;
+        }
+    }
+
+    .advantages{
+        padding-bottom: 60px;
+        .container{
+            padding-inline: 15px;
+        }
+        &-title{
+            text-align: center;
+        }
+    &-list{
+        width: 100%;
+        max-width: max-content;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: repeat(1 , 4fr);
+        gap: 30px;
+    }
+}
+    .team{
+        &-title{
+            font-size: 28px;
+            letter-spacing: 0.84px;
+        }
+        &-list{
+            width: 85%;
+            max-width: max-content;
+            margin-inline: auto;
+            display: grid;
+            grid-template-columns: repeat(1,4fr);
+            // row-gap: 30px;
+            // column-gap: 5vw;
+            gap: 30px;
+        }
+        &-item{
+            width: 100%;
+        }
+        &-img{
+            width: 100%;
+            height: max-content;
+           }
+    }
+    .customers{
+        &-title{
+            font-size: 28px;
+            letter-spacing: 0.84px;
+        }
+        &-list{
+            display:grid;
+            grid-template-columns: repeat(2,3fr);
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width:400px){
+    .hero{
+        &-title{
+            font-size: 26px;
             width: 80vw;
         }
     }
