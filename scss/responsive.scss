@@ -156,6 +156,17 @@
             height: max-content;
            }
     }
+    .model{
+        width: 100%;
+        max-width: 450px;
+        &-title{
+            width: 100%;
+            max-width: 370px;
+        font-size: 20px;
+        letter-spacing: 0.6px;
+        margin-inline: auto;
+        }
+    }
 }
 @media screen and (max-width:535px){
     .header{
@@ -247,6 +258,9 @@
             justify-content: center;
         }
     }
+    .ioqweqweq {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:400px){
     .hero{
@@ -254,5 +268,13 @@
             font-size: 26px;
             width: 80vw;
         }
+    }
+    .ioqweqweq {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:335px){
+    .ioqweqweq {
+        flex-direction: row;
     }
 }
