@@ -78,7 +78,7 @@
   }
   .customers-list {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -221,7 +221,7 @@
     max-width: max-content;
     margin-inline: auto;
     display: grid;
-    grid-template-columns: repeat(1, 4fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
   .team-title {
@@ -235,7 +235,7 @@
     max-width: max-content;
     margin-inline: auto;
     display: grid;
-    grid-template-columns: repeat(1, 4fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
   .team-item {

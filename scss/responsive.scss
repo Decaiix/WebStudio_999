@@ -67,7 +67,7 @@
 .customers{
     &-list{
         display:grid;
-        grid-template-columns: repeat(3,2fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 30px;
         justify-content: center;
     }
@@ -106,7 +106,7 @@
             width: 450px;
         }
     }
-    
+
     .advantages{
         padding-block: 60px;
     &-list{
@@ -202,7 +202,7 @@
         max-width: max-content;
         margin-inline: auto;
         display: grid;
-        grid-template-columns: repeat(1 , 4fr);
+        grid-template-columns: repeat(1 , 1fr);
         gap: 30px;
     }
 }
@@ -216,7 +216,7 @@
             max-width: max-content;
             margin-inline: auto;
             display: grid;
-            grid-template-columns: repeat(1,4fr);
+            grid-template-columns: repeat(1,1fr);
             // row-gap: 30px;
             // column-gap: 5vw;
             gap: 30px;
