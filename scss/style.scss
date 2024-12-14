@@ -1,6 +1,11 @@
 @import '../utils/variables.scss';
 
-*,*::after,*::before{
+// *,*::after,*::before{
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+// }
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -51,9 +56,12 @@ body{
         color: $accent-color;
     }
     &-box{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 20px;
     }
 }
 .l-header{

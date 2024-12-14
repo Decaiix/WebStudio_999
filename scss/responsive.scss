@@ -236,7 +236,7 @@
         }
         &-list{
             display:grid;
-            grid-template-columns: repeat(2,3fr);
+            grid-template-columns: repeat(2,1fr);
             gap: 30px;
             justify-content: center;
         }
@@ -252,9 +252,4 @@
             width: 80vw;
         }
     }
-}
-@media screen and (max-width:335px){
-    // .ioqweqweq {
-    //     flex-direction: row;
-    // }
 }

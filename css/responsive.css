@@ -253,7 +253,7 @@
   }
   .customers-list {
     display: grid;
-    grid-template-columns: repeat(2, 3fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;

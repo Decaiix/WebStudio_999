@@ -1,4 +1,4 @@
-*, *::after, *::before {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -56,15 +56,9 @@ body {
   color: #2196F3;
 }
 .header-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
 }
 
 .l-header {
@@ -1532,7 +1526,7 @@ textarea::placeholder {
   }
   .customers-list {
     display: grid;
-    grid-template-columns: repeat(2, 3fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
