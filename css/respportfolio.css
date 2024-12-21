@@ -100,4 +100,12 @@
   .text-content {
     width: 80vw;
   }
+  .rtyqwe p {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .rtyqwe p {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=respportfolio.css.map */

@@ -29,6 +29,7 @@ ul{
 }
 body{
     font-family: "Roboto", sans-serif; 
+    word-wrap: break-word;
 }
 
 
@@ -308,7 +309,8 @@ body{
 
 
     & p{
-        width: 322px;
+        width: 100%;
+        max-width: 322px;
         color: $main-colorsec;
         font-size: 18px;
         font-weight: 400;
