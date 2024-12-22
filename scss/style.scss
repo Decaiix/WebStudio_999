@@ -188,6 +188,24 @@ body{
             gap: 15px;
             flex-direction: column;
           }
+          &-contacts{
+            display: flex;
+            flex-direction: column;
+            .phonenum{
+                color: $accent-color;
+                font-size: 34px;
+                font-weight: 500;
+                line-height: 1.2;
+                letter-spacing: 0.68px;
+            }
+            .emailqweqweqweqweqwe{
+                color: $sub-color;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 1.2;
+                letter-spacing: 0.48px;
+        }
+          }
     }
     }
 
